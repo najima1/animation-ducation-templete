@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Open+Sans:ital,wght@0,400;1,300&family=Oswald:wght@400;500;600&family=Poppins:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dropdown_menu {
+    @apply flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Cormorant SC", serif; */
+}
+html {
+  scroll-behavior: smooth;
+}
+#nav-list li a {
+  font-size: 17px;
+}
+.navlist li a {
+  color: black;
+}
+.navlist li a:hover {
+  color: teal;
+  transition: 0.2s;
+}
+
+/* body banner section with text  */
+.custom_banner_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2;
+}
+.slider_box {
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+
+/*====== explore section with text ====== */
+.explore_wraper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2;
+}
+.custom_arrow:hover i {
+  padding-left: 0.5rem;
+  transition: 0.5s;
+}
+.sigle_explore {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.sigle_explore:hover {
+  background: #2b4eff;
+  transition: 0.5s;
+  color: white;
+}
+.sigle_explore:hover i {
+  color: white;
+}
+.single_box_wraper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* =================== doule banner with pictur =================== */
+.banner_right_img {
+  background: linear-gradient(
+    90deg,
+    rgba(244, 238, 224, 1) 0%,
+    rgba(244, 238, 224, 1) 0%,
+    rgba(244, 238, 224, 1) 0%,
+    rgba(244, 238, 224, 1) 0%,
+    rgba(244, 238, 224, 1) 2%,
+    rgba(244, 238, 224, 1) 13%,
+    rgba(244, 238, 224, 1) 41%,
+    rgba(239, 196, 186, 1) 100%
+  );
+}
+.banner_left_img {
+  background: linear-gradient(
+    90deg,
+    rgba(245, 249, 252, 1) 0%,
+    rgba(245, 249, 252, 1) 0%,
+    rgba(245, 249, 252, 1) 0%,
+    rgba(245, 249, 252, 1) 0%,
+    rgba(245, 249, 252, 1) 2%,
+    rgba(245, 249, 252, 1) 13%,
+    rgba(245, 249, 252, 1) 41%,
+    rgba(183, 224, 252, 1) 100%
+  );
+}
+.custom_doule_div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 2;
+}
+/* ==========find the all testimonial single box==========  */
+ul.testmonial_nav li a {
+  padding: 0.5rem 0.8rem;
+  margin: 5px;
+  font-style: bold;
+  font-weight: 600;
+}
+ul.testmonial_nav li a:hover {
+  color: teal;
+  transition: 0.5s;
+}
+
+/* single box testimonial */
+.single_testimonial_box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.single_info_box {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 0.6rem;
+}
+
+.custom_arrows:hover {
+  color: teal;
+  transition: 0.5s;
+}
+.custom_arrows:hover i {
+  margin-left: 5px;
+  transition: 0.6s;
+}
+/*=============== according section with question =============== */
+
+#bg_image {
+  background-image: url("../image/events-shape.png");
+}
+
+.pricing_single_card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: space-evenly;
+}
